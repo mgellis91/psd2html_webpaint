@@ -203,7 +203,6 @@ html {
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.1") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.1") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.1") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.1") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.1#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -263,7 +262,6 @@ html {
 
 .fa.fa-pull-left {
   margin-right: .3em; }
-
 .fa.fa-pull-right {
   margin-left: .3em; }
 
@@ -276,7 +274,6 @@ html {
 
 .fa.pull-left {
   margin-right: .3em; }
-
 .fa.pull-right {
   margin-left: .3em; }
 
@@ -295,7 +292,6 @@ html {
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
-
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -303,7 +299,6 @@ html {
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
-
 .fa-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   -webkit-transform: rotate(90deg);
@@ -2502,8 +2497,7 @@ header.navigation {
         font-size: 1.2em;
         position: absolute;
         right: 0.5em; }
-    header.navigation li.more:focus > .submenu,
-    header.navigation li.more:hover > .submenu {
+    header.navigation li.more:focus > .submenu, header.navigation li.more:hover > .submenu {
       display: block; }
     @media screen and (min-width: 900px) {
       header.navigation li.more {
@@ -2631,14 +2625,14 @@ section#features {
     section#features .feature p {
       color: #7a7a7a; }
 
+section#work .active {
+  background: #595959; }
 section#work p {
   color: #7a7a7a;
   font-weight: 400;
   margin-bottom: 3.2em; }
-
 section#work ul {
   margin-bottom: 1.6em; }
-
 section#work li {
   display: inline;
   background-color: #ff6760;
@@ -2650,43 +2644,39 @@ section#work li {
   section#work li:hover {
     cursor: pointer;
     cursor: hand; }
-
+@media screen and (max-width: 769px) {
+  section#work li {
+    width: 100%;
+    display: block;
+    margin-bottom: 1em; } }
 section#work .container {
   padding: 2% 2% 0;
   text-align: justify;
   font-size: 0;
   max-width: 90%;
   margin: 0 auto; }
-
 section#work .container:after {
   content: '';
   display: inline-block;
   width: 100%; }
-
 section#work .container .item,
 section#work .container .gap {
   display: inline-block;
   width: 49%; }
-
 section#work .container .item {
   text-align: left;
   margin-bottom: 2%;
   /*display: none; <-- uncomment this rule for use with MixItUp */ }
-
 section#work .container .item:before {
   content: '';
   display: inline-block;
   padding-top: 60%; }
-
 section#work .container .mix {
   display: none; }
-
-@media all and (min-width: 420px) {
-  section#work .container .item,
-  section#work .container .gap {
-    width: 48%; } }
-
-@media all and (min-width: 640px) {
+section#work .container .item,
+section#work .container .gap {
+  width: 48%; }
+@media screen and (min-width: 900px) {
   section#work .container .item,
   section#work .container .gap {
     width: 23.5%; } }
@@ -2698,12 +2688,37 @@ section#contact {
   section#contact p, section#contact li {
     color: #b0b0b0; }
   section#contact li {
-    display: inline;
-    margin-right: 1.6rem;
-    font-size: 0.8em; }
-    section#contact li i {
+    display: inline; }
+  section#contact .contact-info {
+    margin-bottom: 1.6em; }
+    section#contact .contact-info li {
+      margin-right: 1.6rem;
+      font-size: 0.8em; }
+    section#contact .contact-info i {
       margin-right: 1em;
       color: #ff6760; }
+  section#contact .social-links {
+    text-align: center; }
+    section#contact .social-links .rss {
+      background: #f3b25b; }
+    section#contact .social-links .facebook {
+      background: #5883c0; }
+    section#contact .social-links .twitter {
+      background: #63bee0; }
+    section#contact .social-links .dribbble {
+      background: #e9a0c4; }
+    section#contact .social-links .pinterest {
+      background: #d35051; }
+  section#contact .social-links a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    margin-right: 7px; }
+  section#contact .social-links a i {
+    font-size: 20px;
+    line-height: 38px;
+    color: #fff; }
 
 footer {
   padding: 1.6em 0;

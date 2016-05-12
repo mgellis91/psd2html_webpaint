@@ -360,6 +360,11 @@ section#hero{
  }
 
  section#work{
+
+   .active{
+     background: #595959;
+   }
+
    p{
      color:#7a7a7a;
      font-weight: 400;
@@ -368,6 +373,7 @@ section#hero{
    ul{
      margin-bottom: 1.6em;
    }
+
    li{
      display: inline;
      background-color: #ff6760;
@@ -379,6 +385,14 @@ section#hero{
      &:hover{
        cursor: pointer;
        cursor: hand;
+     }
+   }
+
+   @media screen and(max-width:769px) {
+     li{
+       width: 100%;
+       display: block;
+       margin-bottom: 1em;
      }
    }
 
@@ -418,14 +432,12 @@ section#hero{
     display: none;
   }
 
-  @media all and (min-width: 420px){
-    .container .item,
-    .container .gap{
-      width: 48%;
-    }
+  .container .item,
+  .container .gap{
+    width: 48%;
   }
 
-  @media all and (min-width: 640px){
+  @include media($large-screen){
     .container .item,
     .container .gap{
       width: 23.5%;
@@ -442,15 +454,46 @@ section#hero{
    p,li{
      color:#b0b0b0;
    }
+
    li{
+     display: inline;
+   }
+
+  .contact-info{
+    margin-bottom: 1.6em;
+    li{
+      margin-right: 1.6rem;
+      font-size: 0.8em;
+    }
      i{
        margin-right: 1em;
        color:#ff6760;
      }
-     display: inline;
-     margin-right: 1.6rem;
-     font-size: 0.8em;
    }
+
+   .social-links{
+     text-align: center;
+     .rss{background: #f3b25b;}
+     .facebook{background: #5883c0;}
+     .twitter{background: #63bee0;}
+     .dribbble{background: #e9a0c4;}
+     .pinterest{background:#d35051;}
+   }
+   .social-links a{
+    display: inline-block;
+	width: 36px;
+	height: 36px;
+	border-radius: 100%;
+	margin-right: 7px;
+
+}
+.social-links a i{
+	font-size: 20px;
+    line-height: 38px;
+	color: #fff;
+}
+
+
  }
 
  footer{
