@@ -26,7 +26,8 @@ $ npm install gulp gulp-concat gulp-uglify gulp-rename gulp-sass gulp-sourcemaps
 
 # Live View
 
-See a live view of the template at http://mgellis91.github.io/psd2html_webpaint/
+See a live view of the template at
+
 
 # Find More Templates
 

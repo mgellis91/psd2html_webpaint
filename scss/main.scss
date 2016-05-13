@@ -388,11 +388,18 @@ section#hero{
      }
    }
 
+   .container .item img{
+     width: 100% !important;
+   }
+
    @media screen and(max-width:769px) {
      li{
        width: 100%;
        display: block;
        margin-bottom: 1em;
+     }
+     .container .item img{
+       width: 100% !important;
      }
    }
 
