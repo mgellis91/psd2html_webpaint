@@ -2356,6 +2356,9 @@ html {
   overflow: visible;
   clip: auto; }
 
+/*=========================
+  Global Styles
+==========================*/
 body {
   margin: 0;
   font-family: 'Lato', sans-serif; }
@@ -2368,35 +2371,38 @@ h2 {
   font-family: 'Lato',sans-serif;
   font-size: 2em; }
 
-header.navigation {
+/*=========================
+  Nav bar
+==========================*/
+.navigation {
   background-color: #262626;
   min-height: 60px;
   width: 100%;
   z-index: 999; }
-  header.navigation .navigation-wrapper {
+  .navigation .navigation-wrapper {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     z-index: 9999;
     padding: 10px 0; }
-    header.navigation .navigation-wrapper::after {
+    .navigation .navigation-wrapper::after {
       clear: both;
       content: "";
       display: block; }
-    header.navigation .navigation-wrapper::after {
+    .navigation .navigation-wrapper::after {
       clear: both;
       content: "";
       display: block; }
-  header.navigation .logo {
+  .navigation .logo {
     float: left;
     max-height: 60px;
     padding-left: 1em;
     padding-right: 2em; }
-    header.navigation .logo img {
+    .navigation .logo img {
       max-height: 60px;
       padding: 0.8em 0; }
-  header.navigation .navigation-menu-button {
+  .navigation .navigation-menu-button {
     color: #d9d9d9;
     display: block;
     float: right;
@@ -2406,18 +2412,18 @@ header.navigation {
     text-decoration: none;
     text-transform: uppercase; }
     @media screen and (min-width: 900px) {
-      header.navigation .navigation-menu-button {
+      .navigation .navigation-menu-button {
         display: none; } }
-    header.navigation .navigation-menu-button:focus, header.navigation .navigation-menu-button:hover {
+    .navigation .navigation-menu-button:focus, .navigation .navigation-menu-button:hover {
       color: white; }
-  header.navigation nav {
+  .navigation nav {
     float: none;
     min-height: 60px;
     z-index: 9999999; }
     @media screen and (min-width: 900px) {
-      header.navigation nav {
+      .navigation nav {
         float: right; } }
-  header.navigation ul.navigation-menu {
+  .navigation ul.navigation-menu {
     clear: both;
     display: none;
     margin: 0 auto;
@@ -2425,14 +2431,14 @@ header.navigation {
     padding: 0;
     width: 100%;
     z-index: 9999; }
-    header.navigation ul.navigation-menu.show {
+    .navigation ul.navigation-menu.show {
       display: block; }
     @media screen and (min-width: 900px) {
-      header.navigation ul.navigation-menu {
+      .navigation ul.navigation-menu {
         display: inline;
         margin: 0;
         padding: 0; } }
-  header.navigation ul li.nav-link {
+  .navigation ul li.nav-link {
     background: #262626;
     display: block;
     line-height: 60px;
@@ -2442,38 +2448,38 @@ header.navigation {
     width: 100%;
     z-index: 9999; }
     @media screen and (min-width: 900px) {
-      header.navigation ul li.nav-link {
+      .navigation ul li.nav-link {
         background: transparent;
         display: inline;
         line-height: 60px;
         text-decoration: none;
         width: auto; } }
-    header.navigation ul li.nav-link a {
+    .navigation ul li.nav-link a {
       color: #d9d9d9;
       display: inline-block;
       text-decoration: none;
       text-transform: uppercase;
       font-weight: 700; }
       @media screen and (min-width: 900px) {
-        header.navigation ul li.nav-link a {
+        .navigation ul li.nav-link a {
           padding-right: 1em; } }
-      header.navigation ul li.nav-link a:focus, header.navigation ul li.nav-link a:hover {
+      .navigation ul li.nav-link a:focus, .navigation ul li.nav-link a:hover {
         color: white; }
-  header.navigation .active-nav-item a {
+  .navigation .active-nav-item a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding-bottom: 3px; }
-  header.navigation li.more.nav-link {
+  .navigation li.more.nav-link {
     padding-right: 0; }
     @media screen and (min-width: 900px) {
-      header.navigation li.more.nav-link {
+      .navigation li.more.nav-link {
         padding-right: 1em; } }
-    header.navigation li.more.nav-link > ul > li:first-child a {
+    .navigation li.more.nav-link > ul > li:first-child a {
       padding-top: 1em; }
-    header.navigation li.more.nav-link a {
+    .navigation li.more.nav-link a {
       margin-right: 1em; }
-    header.navigation li.more.nav-link > a {
+    .navigation li.more.nav-link > a {
       padding-right: 0.6em; }
-    header.navigation li.more.nav-link > a::after {
+    .navigation li.more.nav-link > a::after {
       position: absolute;
       top: auto;
       right: -0.4em;
@@ -2481,99 +2487,58 @@ header.navigation {
       left: auto;
       color: #d9d9d9;
       content: "\25BE"; }
-  header.navigation li.more {
+  .navigation li.more {
     overflow: visible;
     padding-right: 0; }
-    header.navigation li.more a {
+    .navigation li.more a {
       padding-right: 0.8em; }
-    header.navigation li.more > a {
+    .navigation li.more > a {
       padding-right: 1.6em;
       position: relative; }
       @media screen and (min-width: 900px) {
-        header.navigation li.more > a {
+        .navigation li.more > a {
           margin-right: 1em; } }
-      header.navigation li.more > a::after {
+      .navigation li.more > a::after {
         content: "›";
         font-size: 1.2em;
         position: absolute;
         right: 0.5em; }
-    header.navigation li.more:focus > .submenu, header.navigation li.more:hover > .submenu {
+    .navigation li.more:focus > .submenu, .navigation li.more:hover > .submenu {
       display: block; }
     @media screen and (min-width: 900px) {
-      header.navigation li.more {
+      .navigation li.more {
         padding-right: 0.8em;
         position: relative; } }
-  header.navigation ul.submenu {
-    display: none;
-    padding-left: 0; }
-    @media screen and (min-width: 900px) {
-      header.navigation ul.submenu {
-        left: -1em;
-        position: absolute;
-        top: 1.5em; } }
-    @media screen and (min-width: 900px) {
-      header.navigation ul.submenu .submenu.fly-out-right {
-        left: 11.8em;
-        top: 0; } }
-    @media screen and (min-width: 900px) {
-      header.navigation ul.submenu .submenu.fly-out-left {
-        left: -11.8em;
-        top: 0; } }
-    @media screen and (min-width: 900px) {
-      header.navigation ul.submenu .submenu {
-        left: 11.8em;
-        top: 0; } }
-    header.navigation ul.submenu li {
-      display: block;
-      padding-right: 0; }
-      @media screen and (min-width: 900px) {
-        header.navigation ul.submenu li {
-          line-height: 46.15385px; }
-          header.navigation ul.submenu li:first-child > a {
-            border-top-left-radius: 3px;
-            border-top-right-radius: 3px; }
-          header.navigation ul.submenu li:last-child > a {
-            border-bottom-left-radius: 3px;
-            border-bottom-right-radius: 3px;
-            padding-bottom: 0.7em; } }
-      header.navigation ul.submenu li a {
-        background-color: #1e1e1e;
-        display: inline-block;
-        text-align: right;
-        width: 100%; }
-        @media screen and (min-width: 900px) {
-          header.navigation ul.submenu li a {
-            background-color: #262626;
-            padding-left: 1em;
-            text-align: left;
-            width: 12em; } }
-  header.navigation .navigation-tools {
+  .navigation .navigation-tools {
     background: #505050;
     clear: both;
     display: block;
     height: 60px; }
     @media screen and (min-width: 900px) {
-      header.navigation .navigation-tools {
+      .navigation .navigation-tools {
         background: transparent;
         clear: none;
         float: right; } }
 
-section#hero {
+/*=========================
+  Hero Unit
+==========================*/
+#hero {
   background-color: #2a2a2a;
   color: #d9d9d9; }
-  section#hero h1 {
+  #hero h1 {
     font-size: 4em;
     margin-bottom: 1rem;
     font-weight: 100; }
-    section#hero h1 span {
+    #hero h1 span {
       font-weight: bold; }
-  section#hero p {
+  #hero p {
     font-weight: 100;
     font-size: 2.4em;
     margin-bottom: 1em; }
-    section#hero p span {
+    #hero p span {
       font-style: italic; }
-  section#hero a {
+  #hero a {
     font-size: 0.8em;
     text-transform: uppercase;
     color: #d9d9d9;
@@ -2581,59 +2546,65 @@ section#hero {
     padding: .8rem 1.6rem;
     border-radius: 5px; }
 
-section#features {
+ /*=========================
+  Features Section
+==========================*/
+#features {
   background-color: #f8f8f8; }
-  section#features div#features-inner {
+  #features #features-inner {
     max-width: 85%;
     margin-left: auto;
     margin-right: auto; }
-    section#features div#features-inner::after {
+    #features #features-inner::after {
       clear: both;
       content: "";
       display: block; }
-  section#features .feature {
+  #features .feature {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
     margin-bottom: 1.6em; }
-    section#features .feature:last-child {
+    #features .feature:last-child {
       margin-right: 0; }
-    section#features .feature:nth-child(2n) {
+    #features .feature:nth-child(2n) {
       margin-right: 0; }
-    section#features .feature:nth-child(2n+1) {
+    #features .feature:nth-child(2n+1) {
       clear: left; }
     @media screen and (min-width: 900px) {
-      section#features .feature {
+      #features .feature {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 23.23176%; }
-        section#features .feature:nth-child(2n) {
+        #features .feature:nth-child(2n) {
           margin-right: 2.35765%; }
-        section#features .feature:nth-child(2n+1) {
+        #features .feature:nth-child(2n+1) {
           clear: none; }
-        section#features .feature:last-child {
+        #features .feature:last-child {
           margin-right: 0; } }
-    section#features .feature img {
+    #features .feature img {
       margin-bottom: 1.6em;
       height: 59px; }
-    section#features .feature h3 {
+    #features .feature h3 {
       font-family: 'Lato',sans-serif;
       color: #616161;
       font-weight: 700; }
-    section#features .feature p {
+    #features .feature p {
       color: #7a7a7a; }
 
-section#work .active {
+/*=========================
+  Work Section
+==========================*/
+#work .active {
   background: #595959; }
-section#work p {
+#work p {
   color: #7a7a7a;
   font-weight: 400;
   margin-bottom: 3.2em; }
-section#work ul {
+#work ul {
   margin-bottom: 1.6em; }
-section#work li {
+#work li {
   display: inline;
   background-color: #ff6760;
   margin-right: .5em;
@@ -2641,48 +2612,48 @@ section#work li {
   border-radius: 5px;
   color: white;
   text-transform: uppercase; }
-  section#work li:hover {
+  #work li:hover {
     cursor: pointer;
     cursor: hand; }
-section#work .container .item img {
+#work .container .item img {
   width: 100% !important; }
 @media screen and (max-width: 769px) {
-  section#work li {
+  #work li {
     width: 100%;
     display: block;
     margin-bottom: 1em; }
-  section#work .container .item img {
+  #work .container .item img {
     width: 100% !important; } }
-section#work .container {
+#work .container {
   padding: 2% 2% 0;
   text-align: justify;
   font-size: 0;
   max-width: 90%;
   margin: 0 auto; }
-section#work .container:after {
+#work .container:after {
   content: '';
   display: inline-block;
   width: 100%; }
-section#work .container .item,
-section#work .container .gap {
+#work .container .item,
+#work .container .gap {
   display: inline-block;
   width: 49%; }
-section#work .container .item {
+#work .container .item {
   text-align: left;
   margin-bottom: 2%;
   /*display: none; <-- uncomment this rule for use with MixItUp */ }
-section#work .container .item:before {
+#work .container .item:before {
   content: '';
   display: inline-block;
   padding-top: 60%; }
-section#work .container .mix {
+#work .container .mix {
   display: none; }
-section#work .container .item,
-section#work .container .gap {
+#work .container .item,
+#work .container .gap {
   width: 48%; }
 @media screen and (min-width: 900px) {
-  section#work .container .item,
-  section#work .container .gap {
+  #work .container .item,
+  #work .container .gap {
     width: 23.5%; } }
 
 section#contact {
